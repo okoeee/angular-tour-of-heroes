@@ -6,17 +6,21 @@ import { HeroesComponent } from './heroes/heroes.component';
 import { FormsModule } from '@angular/forms';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { MessagesComponent } from './messages/messages.component';
+import { AppRoutingModule } from './app-routing.module';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeroesComponent,
     HeroDetailComponent,
-    MessagesComponent //ng generateで作成すると、declarationsに追加される
+    MessagesComponent,
+    DashboardComponent //ng generateで作成すると、declarationsに追加される
   ],
   imports: [
     BrowserModule,
-    FormsModule //ngModelを使うためには、←をimportする必要がある
+    FormsModule, //ngModelを使うためには、←をimportする必要がある
+    AppRoutingModule //routingを設定するためのモジュール
   ],
   providers: [],
   bootstrap: [AppComponent]
