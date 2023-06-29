@@ -5,12 +5,14 @@ import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { FormsModule } from '@angular/forms';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
+import { MessagesComponent } from './messages/messages.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeroesComponent,
-    HeroDetailComponent //ng generateで作成すると、declarationsに追加される
+    HeroDetailComponent,
+    MessagesComponent //ng generateで作成すると、declarationsに追加される
   ],
   imports: [
     BrowserModule,
