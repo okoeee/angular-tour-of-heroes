@@ -29,7 +29,7 @@ import { HeroSearchComponent } from './hero-search/hero-search.component';
     HttpClientModule, //http通信を行う。
     HttpClientInMemoryWebApiModule.forRoot(
       InMemoryDataService, { dataEncapsulation: false }
-    )
+    ),
   ],
   providers: [],
   bootstrap: [AppComponent]
